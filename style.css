@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fafafa;
+  color: #333;
+  line-height: 1.5;
+}
+
+header {
+  background-color: #ffb84d;
+  color: #222;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+header h1 {
+  font-size: 2rem;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  padding: 1.5rem;
+}
+
+.intro {
+  text-align: center;
+  background-color: #fff5e6;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.features {
+  display: grid;
+  gap: 1rem;
+}
+
+.features article {
+  background-color: #fff;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.features article:hover {
+  transform: scale(1.03);
+}
+
+.form-section {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  max-width: 600px;
+  margin: auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  padding: 0.6rem;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  width: 100%;
+}
+
+fieldset {
+  border: 1px solid #ccc;
+  padding: 0.8rem;
+  border-radius: 8px;
+}
+
+legend {
+  font-weight: bold;
+  padding: 0 0.3rem;
+}
+
+button {
+  padding: 0.7rem;
+  background-color: #ffb84d;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #ffa31a;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #333;
+  color: white;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+@media (min-width: 600px) {
+  .features {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .features {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .form-section {
+    max-width: 700px;
+  }
+}
